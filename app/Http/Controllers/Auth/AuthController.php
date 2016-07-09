@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Furandpaws\Http\Controllers\Auth;
 
-use App\User;
+use Furandpaws\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Furandpaws\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

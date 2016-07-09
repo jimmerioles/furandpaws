@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace Furandpaws\Events;
 
 abstract class Event
 {
