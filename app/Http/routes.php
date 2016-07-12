@@ -12,5 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/pet-store', function () {
+    return view('petstore');
+});
+
+Route::get('/post-sale', function () {
+    return view('post-sale');
+});
+
+Route::get('/adopt', function () {
+    return view('adopt');
+});
+
+Route::get('/breed', function () {
+    return view('breed');
 });
