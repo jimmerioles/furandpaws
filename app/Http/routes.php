@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
 
 Route::get('/pet-store', function () {
@@ -29,4 +29,12 @@ Route::get('/adopt', function () {
 
 Route::get('/breed', function () {
     return view('breed');
+});
+
+Route::get('/item', function () {
+    return view('item');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
 });
