@@ -11,30 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'SiteController@home');
 
-Route::get('/pet-store', function () {
-    return view('petstore');
-});
+Route::get('/pet-store', 'SiteController@petStore');
 
-Route::get('/post-sale', function () {
-    return view('post-sale');
-});
+Route::get('/post-sale', 'SiteController@postSale');
 
-Route::get('/adopt', function () {
-    return view('adopt');
-});
+Route::get('/adopt', 'SiteController@adopt');
 
-Route::get('/breed', function () {
-    return view('breed');
-});
+Route::get('/breed', 'SiteController@breed');
 
-Route::get('/item', function () {
-    return view('item');
-});
+Route::get('/item', 'SiteController@item');
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+Route::get('/profile', 'SiteController@profile');
