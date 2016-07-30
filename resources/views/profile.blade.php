@@ -3,7 +3,7 @@
 @section('title', 'Profile')
 
 @push('head-css')
-<link rel="stylesheet" type="text/css" href="css/thumbnail.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/thumbnail.css') }}">
 @endpush
 
 @section('content')
@@ -150,6 +150,6 @@
 @endsection
 
 @push('body-bottom-scripts')
-<script type="text/javascript" src="js/custom-elevate.js"></script>
-<script type="text/javascript" src="js/custom-tooltip.js"></script>
+<script type="text/javascript" src="{{ asset('js/custom-elevate.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/custom-tooltip.js') }}"></script>
 @endpush
