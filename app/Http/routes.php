@@ -11,16 +11,33 @@
 |
 */
 
-Route::get('/', 'SiteController@home');
+Route::group(['middleware' => ['web']], function () {
 
-Route::get('/pet-store', 'SiteController@petStore');
+    Route::auth();
 
-Route::get('/post-sale', 'SiteController@postSale');
+    Route::get('/', 'SiteController@home');
 
-Route::get('/adopt', 'SiteController@adopt');
+    Route::get('/pet-store', 'SiteController@petStore');
 
-Route::get('/breed', 'SiteController@breed');
+    Route::get('/post-sale', 'SiteController@postSale');
 
-Route::get('/item', 'SiteController@item');
+    Route::get('/adopt', 'SiteController@adopt');
 
-Route::get('/profile', 'SiteController@profile');
+    Route::get('/breed', 'SiteController@breed');
+
+    Route::get('/item', 'SiteController@item');
+
+    Route::get('/profile', 'SiteController@profile');
+});
+
+Route::group(['prefix' => 'api/v1', 'middleware' => ['api', 'auth:api']], function () {
+    Route::post('login', 'AuthController@apiLogin');
+
+//    Route::get('users', function () {
+//
+//        $u = auth()->guard('api')->user();
+//
+//        return response()
+//            ->json(array_merge($u->toArray(), ['api_token' => $u->api_token]));
+//    });
+});
