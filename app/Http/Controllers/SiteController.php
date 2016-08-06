@@ -42,4 +42,9 @@ class SiteController extends Controller
     {
         return view('profile');
     }
+
+    public function petClinics()
+    {
+        return view('pet-clinics');
+    }
 }

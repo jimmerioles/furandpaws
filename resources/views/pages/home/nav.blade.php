@@ -17,10 +17,10 @@
                 <li>
                     <a href="#">Features</a>
                     <ul class="sub_nav" id="sub2">
-                        <li class="li-style"><a href="#">Events</a></li>
+                        <li class="li-style"><a href="{{ url('pet-clinics') }}">Pet Clinics</a></li>
                         <li class="li-style"><a href="#">Our Services</a></li>
                         <li class="li-style"><a href="#">Contact</a></li>
-                        <li class="li-style"><a href="#">Our Team</a></li>
+                        <li class="li-style"><a href="">Our Team</a></li>
                     </ul>
                 </li>
                 <li>

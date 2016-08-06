@@ -28,6 +28,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/item', 'SiteController@item');
 
     Route::get('/profile', 'SiteController@profile');
+
+    Route::get('/pet-clinics', 'SiteController@petClinics');
+
 });
 
 Route::group(['prefix' => 'api/v1', 'middleware' => ['api', 'auth:api']], function () {

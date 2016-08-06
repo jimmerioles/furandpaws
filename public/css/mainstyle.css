@@ -6,7 +6,7 @@
 
 
 */
-/* line 9, ../scss/mainstyle.scss */
+/* line 11, ../scss/mainstyle.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ html, body {
   height: 100%;
 }
 
-/* line 16, ../scss/mainstyle.scss */
+/* line 18, ../scss/mainstyle.scss */
 html {
   overflow-y: scroll;
 }
@@ -54,7 +54,7 @@ body {
 
 /* line 29, ../scss/base/_base.scss */
 body, li:hover, a:hover, button:hover, input:focus, input:hover, input:active {
-  cursor: url(../img/cursor/dog.ani), url(../img/cursor/dog.png), progress !important;
+  cursor: url(../img/cursor/catwalking.ani), url(../img/cursor/catwalking.png), default;
 }
 
 /* line 33, ../scss/base/_base.scss */
@@ -80,7 +80,7 @@ a {
 
 /* line 53, ../scss/base/_base.scss */
 a:hover {
-  color: #47c9ec;
+  color: #46c8ec;
   text-decoration: none;
 }
 
@@ -255,9 +255,9 @@ ul, li {
 /* line 205, ../scss/base/_base.scss */
 .fix-nav {
   position: fixed;
-  top: -20px;
+  top: -40px;
   z-index: 1;
-  height: 170px;
+  height: 150px;
   vertical-align: middle;
   -webkit-animation-name: hvr-wobble-vertical;
   animation-name: hvr-wobble-vertical;
@@ -267,6 +267,21 @@ ul, li {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 2;
   animation-iteration-count: 2;
+}
+
+/* line 223, ../scss/base/_base.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* line 229, ../scss/base/_base.scss */
+.alignright {
+  display: inline-block;
+  float: right;
+  margin-left: 2em;
+  text-align: right;
 }
 
 /* Modules - Individual site components*/
@@ -447,24 +462,6 @@ label {
 .dir-form {
   clear: both;
   margin-top: 0em;
-}
-
-/* line 152, ../scss/modules/_components.scss */
-.div item-list-tabs {
-  clear: none;
-  float: left;
-  width: 50%;
-  margin: 15px 0 10px;
-  background: 0 0;
-  clear: left;
-  overflow: hidden;
-}
-
-/* line 162, ../scss/modules/_components.scss */
-.item-list-tabs ul li {
-  float: left;
-  margin: 0;
-  list-style: none;
 }
 
 /* line 169, ../scss/modules/_components.scss */
@@ -836,14 +833,14 @@ div#subnav.item-list-tabs {
 
 /* line 505, ../scss/modules/_components.scss */
 .review-label {
-  width: 10%;
+  width: 15%;
   float: left;
   margin: 5px 0;
 }
 
 /* line 510, ../scss/modules/_components.scss */
 .review-inputs {
-  width: 88%;
+  width: 75%;
   float: left;
   margin: 5px 0;
 }
@@ -862,6 +859,67 @@ div#subnav.item-list-tabs {
   padding: 0 20px;
   outline: none;
   color: #767676;
+}
+
+/* line 533, ../scss/modules/_components.scss */
+.post_featured {
+  overflow: hidden;
+  margin-bottom: 2.4em;
+  position: relative;
+}
+
+/* line 541, ../scss/modules/_components.scss */
+.post_featured img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 545, ../scss/modules/_components.scss */
+.post_nav {
+  position: relative;
+}
+
+/* line 549, ../scss/modules/_components.scss */
+.post_info {
+  line-height: 24px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: #aeb1b3;
+}
+
+/* line 556, ../scss/modules/_components.scss */
+.post_info_item {
+  line-height: 20px;
+  padding-right: 20px;
+}
+
+/* line 562, ../scss/modules/_components.scss */
+.post_info_author {
+  color: #232a34;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-decoration: underline;
+}
+
+/* line 570, ../scss/modules/_components.scss */
+.post_info_date {
+  color: #34c1e7;
+}
+
+/* line 574, ../scss/modules/_components.scss */
+.post_info_item i {
+  padding-right: -40px;
+}
+
+/* line 578, ../scss/modules/_components.scss */
+.post_info_item .fa:hover {
+  color: #6d8192;
+}
+
+/* line 582, ../scss/modules/_components.scss */
+.post_info_bottom {
+  margin-bottom: 40px;
 }
 
 /* line 1, ../scss/modules/_sections.scss */
@@ -1081,6 +1139,31 @@ div#subnav.item-list-tabs {
   font-weight: 700;
 }
 
+/* line 108, ../scss/modules/_buttons.scss */
+.btn-comment {
+  background: #fff;
+  border: 1px solid #A79C9C;
+  color: #bbb;
+  outline: 0;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 0;
+  font-size: 14px;
+  height: auto;
+  letter-spacing: 0;
+  line-height: 14px;
+  padding: 7px 15px;
+  border-radius: 2px;
+  text-transform: Uppercase;
+}
+
+/* line 125, ../scss/modules/_buttons.scss */
+.btn-comment:hover {
+  background: #df3f52;
+  color: #ffffff;
+  border-color: #df3f52;
+}
+
 /* line 2, ../scss/modules/_inputs.scss */
 .field_username, .field_pass, .field_userlogin, .field_password, .field_useremail {
   border: 2px solid #ebebeb;
@@ -1270,7 +1353,7 @@ div#subnav.item-list-tabs {
 /* line 52, ../scss/modules/_profile.scss */
 .avatar {
   border: solid 2px #FFF;
-  background: rgba(255, 255, 255, 0.8);
+  background: url(../img/thumbnail/default-image.png);
   float: left;
   margin: 0 15px 19px 0;
 }
@@ -1358,8 +1441,8 @@ span.activity {
 .item-list-tabs {
   clear: none;
   float: left;
-  width: 50%;
   margin: 15px 0 10px;
+  width: 100%;
   background: 0 0;
   overflow: hidden;
 }
@@ -1390,17 +1473,23 @@ div.item-list-tabs ul li.select a {
 }
 
 /* line 153, ../scss/modules/_profile.scss */
+#buddypress div.pagination .pagination-links {
+  float: right;
+  margin-right: 10px;
+}
+
+/* line 158, ../scss/modules/_profile.scss */
 #item-body {
   float: left;
 }
 
-/* line 156, ../scss/modules/_profile.scss */
+/* line 161, ../scss/modules/_profile.scss */
 #item-body div {
   margin-top: 7px;
   font-size: 1em;
 }
 
-/* line 162, ../scss/modules/_profile.scss */
+/* line 167, ../scss/modules/_profile.scss */
 #item-body select {
   background: #f7fafb;
   width: 75%;
@@ -1417,9 +1506,144 @@ div.item-list-tabs ul li.select a {
   color: #776677;
 }
 
-/* line 178, ../scss/modules/_profile.scss */
+/* line 183, ../scss/modules/_profile.scss */
 .profile-border {
   border: 2px solid #eee;
+}
+
+/* line 188, ../scss/modules/_profile.scss */
+.editfield label {
+  display: block;
+  font-weight: 700;
+  margin: 15px 0 5px;
+  width: auto;
+  color: #000000;
+}
+
+/* line 196, ../scss/modules/_profile.scss */
+.editfield input {
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 0;
+  color: #767676;
+  font: inherit;
+  font-size: 100%;
+  padding: 10px;
+  -webkit-appearance: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  line-height: 1.3em;
+}
+
+/* line 212, ../scss/modules/_profile.scss */
+.field-visibility-settings-notoggle {
+  color: #767676;
+}
+
+/* line 215, ../scss/modules/_profile.scss */
+.current-visibility-level {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 220, ../scss/modules/_profile.scss */
+.description {
+  color: #767676;
+  margin: 5px 0;
+}
+
+/* line 225, ../scss/modules/_profile.scss */
+.current-selected {
+  color: #5bc0de;
+}
+
+/* line 229, ../scss/modules/_profile.scss */
+.drag-drop #drag-drop-area {
+  box-sizing: border-box;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 236, ../scss/modules/_profile.scss */
+#drag-drop-area {
+  border: 4px dashed #bbb;
+}
+
+/* line 241, ../scss/modules/_profile.scss */
+.drag-drop-inside {
+  display: table-cell;
+  padding: 40px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 248, ../scss/modules/_profile.scss */
+.editfield {
+  width: 100%;
+}
+
+/* line 252, ../scss/modules/_profile.scss */
+.drag-drop .drag-drop-inside p {
+  color: #aaa;
+  font-size: 110%;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* line 259, ../scss/modules/_profile.scss */
+.drag-drop-buttons input {
+  text-align: center;
+}
+
+/* line 265, ../scss/modules/_profile.scss */
+label.myLabel input[type="file"] {
+  position: fixed;
+  top: -1000px;
+}
+
+/* line 271, ../scss/modules/_profile.scss */
+.myLabel {
+  background: #fff;
+  border: 1px solid #A79C9C;
+  color: #bbb;
+  outline: 0;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  height: auto;
+  letter-spacing: 0;
+  line-height: 14px;
+  padding: 7px 15px;
+  border-radius: 2px;
+  text-transform: Uppercase;
+}
+
+/* line 286, ../scss/modules/_profile.scss */
+.myLabel:hover {
+  background: #df3f52;
+  color: #ffffff;
+  border-color: #df3f52;
+}
+
+/* line 291, ../scss/modules/_profile.scss */
+.myLabel:active {
+  background: #df3f52;
+  color: #ffffff;
+  border-color: #df3f52;
+}
+
+/* line 298, ../scss/modules/_profile.scss */
+#item-buttons {
+  margin: 0 0 10px;
+  padding: 0 0 5px;
+}
+
+/* line 303, ../scss/modules/_profile.scss */
+#buddypress div#item-header a.button, #buddypress div#item-header div.generic-button {
+  float: left;
+  margin: 10px 10px 10px 0;
 }
 
 /* Layouts - Page Layout Styles*/
@@ -1432,24 +1656,28 @@ div.item-list-tabs ul li.select a {
 /* line 8, ../scss/layouts/_header.scss */
 .nav_container .nav_main {
   width: 80%;
-  height: 194px;
+  height: 150px;
   position: relative;
   margin: 0 auto;
 }
 /* line 16, ../scss/layouts/_header.scss */
 .nav_container .nav_main .nav_left {
-  width: 35%;
+  width: 20%;
   float: left;
 }
 /* line 19, ../scss/layouts/_header.scss */
 .nav_container .nav_main .nav_left img {
   padding: 10%;
+  width: 80%;
+  margin-top: 12%;
 }
-/* line 25, ../scss/layouts/_header.scss */
+/* line 27, ../scss/layouts/_header.scss */
 .nav_container .nav_main .nav_right {
-  width: 65%;
+  width: 75%;
   float: right;
-  padding-top: 5%;
+  right: 0;
+  padding-top: 4%;
+  padding-left: 8%;
   font-size: 1em;
   @-webkit-keyframes hvr-wobble-vertical {
     /* line 149, ../scss/base/_base.scss */
@@ -1556,7 +1784,7 @@ div.item-list-tabs ul li.select a {
 }
 /* line 29, ../scss/base/_base.scss */
 .nav_container .nav_main .nav_right body, .nav_container .nav_main .nav_right li:hover, .nav_container .nav_main .nav_right a:hover, .nav_container .nav_main .nav_right button:hover, .nav_container .nav_main .nav_right input:focus, .nav_container .nav_main .nav_right input:hover, .nav_container .nav_main .nav_right input:active {
-  cursor: url(../img/cursor/dog.ani), url(../img/cursor/dog.png), progress !important;
+  cursor: url(../img/cursor/catwalking.ani), url(../img/cursor/catwalking.png), default;
 }
 /* line 33, ../scss/base/_base.scss */
 .nav_container .nav_main .nav_right body::-webkit-scrollbar {
@@ -1577,7 +1805,7 @@ div.item-list-tabs ul li.select a {
 }
 /* line 53, ../scss/base/_base.scss */
 .nav_container .nav_main .nav_right a:hover {
-  color: #47c9ec;
+  color: #46c8ec;
   text-decoration: none;
 }
 /* line 59, ../scss/base/_base.scss */
@@ -1665,9 +1893,9 @@ div.item-list-tabs ul li.select a {
 /* line 205, ../scss/base/_base.scss */
 .nav_container .nav_main .nav_right .fix-nav {
   position: fixed;
-  top: -20px;
+  top: -40px;
   z-index: 1;
-  height: 170px;
+  height: 150px;
   vertical-align: middle;
   -webkit-animation-name: hvr-wobble-vertical;
   animation-name: hvr-wobble-vertical;
@@ -1678,16 +1906,29 @@ div.item-list-tabs ul li.select a {
   -webkit-animation-iteration-count: 2;
   animation-iteration-count: 2;
 }
-/* line 35, ../scss/layouts/_header.scss */
+/* line 223, ../scss/base/_base.scss */
+.nav_container .nav_main .nav_right img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+/* line 229, ../scss/base/_base.scss */
+.nav_container .nav_main .nav_right .alignright {
+  display: inline-block;
+  float: right;
+  margin-left: 2em;
+  text-align: right;
+}
+/* line 39, ../scss/layouts/_header.scss */
 .nav_container .nav_main .nav_right ul, .nav_container .nav_main .nav_right li {
   display: inline-block;
   padding: 15px;
 }
-/* line 37, ../scss/layouts/_header.scss */
+/* line 41, ../scss/layouts/_header.scss */
 .nav_container .nav_main .nav_right ul a, .nav_container .nav_main .nav_right li a {
   padding-bottom: 10px;
 }
-/* line 41, ../scss/layouts/_header.scss */
+/* line 45, ../scss/layouts/_header.scss */
 .nav_container .nav_main .nav_right ul li:nth-child(1) a:hover, .nav_container .nav_main .nav_right ul a:focus, .nav_container .nav_main .nav_right ul .active, .nav_container .nav_main .nav_right ul li:nth-child(2) a:hover, .nav_container .nav_main .nav_right ul li:nth-child(3) a:hover, .nav_container .nav_main .nav_right ul li:nth-child(4) a:hover, .nav_container .nav_main .nav_right li li:nth-child(1) a:hover, .nav_container .nav_main .nav_right li a:focus, .nav_container .nav_main .nav_right li .active, .nav_container .nav_main .nav_right li li:nth-child(2) a:hover, .nav_container .nav_main .nav_right li li:nth-child(3) a:hover, .nav_container .nav_main .nav_right li li:nth-child(4) a:hover {
   color: #34c1e7;
   text-decoration: none;
@@ -1985,6 +2226,154 @@ footer {
 
 /*Modals - page modals Styles*/
 /* line 1, ../scss/modals/_login.scss */
+.profilemodal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
+/* line 15, ../scss/modals/_login.scss */
+.settings {
+  margin-bottom: 15px;
+  padding: 0 15%;
+}
+
+/* line 19, ../scss/modals/_login.scss */
+.settings a {
+  color: #a8aaab;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 20px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  border-bottom: none;
+}
+
+/* line 32, ../scss/modals/_login.scss */
+.help {
+  margin-bottom: 15px;
+  padding: 0 15%;
+}
+
+/* line 37, ../scss/modals/_login.scss */
+.help a {
+  color: #a8aaab;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 24px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  border-bottom: none;
+}
+
+/* line 51, ../scss/modals/_login.scss */
+.help a:hover, .settings a:hover {
+  opacity: 1.2;
+  text-decoration: none;
+}
+
+/* line 57, ../scss/modals/_login.scss */
+.user_info {
+  list-style: none;
+  margin: 30px 0;
+}
+
+/* line 62, ../scss/modals/_login.scss */
+.cart_text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 72, ../scss/modals/_login.scss */
+.user_cart {
+  background-color: #082b49;
+  overflow: hidden;
+  padding: 15px 15px 15px 0;
+  text-align: center;
+}
+
+/* line 78, ../scss/modals/_login.scss */
+.user_avatar img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  width: 70px;
+  height: 65px;
+}
+
+/* line 86, ../scss/modals/_login.scss */
+.user_avatar {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  float: left;
+}
+
+/* line 91, ../scss/modals/_login.scss */
+.user_text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+/* line 99, ../scss/modals/_login.scss */
+.user_name {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 300;
+  display: block;
+}
+
+/* line 107, ../scss/modals/_login.scss */
+.user_account {
+  color: #242424;
+  overflow: hidden;
+  margin-bottom: 35px;
+  padding: 0 40px;
+}
+
+/* line 114, ../scss/modals/_login.scss */
+.profile-content {
+  width: 30%;
+  height: 500px;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  left: 36%;
+  top: 15%;
+  padding: 3% 0;
+}
+
+/* line 125, ../scss/modals/_login.scss */
+.profile-main-content {
+  width: 100%;
+  height: auto;
+  position: inherit;
+}
+
+/* line 131, ../scss/modals/_login.scss */
+.user_logout {
+  padding: 0 40px;
+}
+
+/* line 136, ../scss/modals/_login.scss */
 #login-modal {
   width: 100%;
   height: 100%;
@@ -1996,7 +2385,7 @@ footer {
   display: none;
 }
 
-/* line 13, ../scss/modals/_login.scss */
+/* line 148, ../scss/modals/_login.scss */
 .login-content {
   width: 48%;
   height: 378px;
@@ -2006,18 +2395,18 @@ footer {
   left: 26%;
   top: 25%;
 }
-/* line 22, ../scss/modals/_login.scss */
+/* line 157, ../scss/modals/_login.scss */
 .login-content .unselect {
   background: #eee;
   opacity: 0.9;
   color: #bac0c3;
 }
-/* line 30, ../scss/modals/_login.scss */
+/* line 165, ../scss/modals/_login.scss */
 .login-content .login-header {
   width: 100%;
   height: inherit;
 }
-/* line 34, ../scss/modals/_login.scss */
+/* line 169, ../scss/modals/_login.scss */
 .login-content .login-header .login-header-left {
   width: 50%;
   height: auto;
@@ -2025,7 +2414,7 @@ footer {
   text-align: center;
   height: 85px;
 }
-/* line 40, ../scss/modals/_login.scss */
+/* line 175, ../scss/modals/_login.scss */
 .login-content .login-header .login-header-left h4 {
   margin: 0;
   font-size: 16px;
@@ -2034,7 +2423,7 @@ footer {
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 51, ../scss/modals/_login.scss */
+/* line 186, ../scss/modals/_login.scss */
 .login-content .login-header .login-header-right {
   width: 50%;
   height: auto;
@@ -2042,7 +2431,7 @@ footer {
   text-align: center;
   height: 85px;
 }
-/* line 57, ../scss/modals/_login.scss */
+/* line 192, ../scss/modals/_login.scss */
 .login-content .login-header .login-header-right h4 {
   margin: 0;
   font-size: 16px;
@@ -2051,25 +2440,25 @@ footer {
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 71, ../scss/modals/_login.scss */
+/* line 206, ../scss/modals/_login.scss */
 .login-content .login-main-content {
   width: 100%;
   height: auto;
   position: inherit;
 }
-/* line 76, ../scss/modals/_login.scss */
+/* line 211, ../scss/modals/_login.scss */
 .login-content .login-main-content .content-signin {
   width: 100%;
   height: 293px;
   padding: 50px 40px;
 }
-/* line 81, ../scss/modals/_login.scss */
+/* line 216, ../scss/modals/_login.scss */
 .login-content .login-main-content .content-signup {
   width: 100%;
   height: 293px;
   padding: 50px 40px;
 }
-/* line 88, ../scss/modals/_login.scss */
+/* line 223, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-left {
   float: left;
   padding-right: 40px;
@@ -2079,31 +2468,31 @@ footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 99, ../scss/modals/_login.scss */
+/* line 234, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-left input[type="text"], .login-content .login-main-content .form-left input[type="password"] {
   border-style: none;
   -webkit-appearance: none;
   outline: none;
   resize: none;
 }
-/* line 107, ../scss/modals/_login.scss */
+/* line 242, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-left input[type="checkbox"] {
   width: 20px;
   height: 20px;
 }
-/* line 116, ../scss/modals/_login.scss */
+/* line 251, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-left .terms {
   color: #47c9ec;
   text-decoration: none;
   margin-bottom: 20px;
 }
-/* line 123, ../scss/modals/_login.scss */
+/* line 258, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-left .span-style {
   position: relative;
   line-height: 1.5em;
   color: #5b6a76;
 }
-/* line 133, ../scss/modals/_login.scss */
+/* line 268, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right {
   float: right;
   padding-left: 40px;
@@ -2112,49 +2501,396 @@ footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 142, ../scss/modals/_login.scss */
+/* line 277, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .login_social_title {
   color: #999fa2;
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 23px;
 }
-/* line 149, ../scss/modals/_login.scss */
+/* line 284, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .login_social_list {
   padding: 0;
   width: 100%;
 }
-/* line 154, ../scss/modals/_login.scss */
+/* line 289, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .login_social_list ul {
   width: 100%;
 }
-/* line 156, ../scss/modals/_login.scss */
+/* line 291, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .login_social_list ul li {
   list-style-type: none;
   display: inline;
   padding: 5px;
 }
-/* line 161, ../scss/modals/_login.scss */
+/* line 296, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .login_social_list ul li a {
   text-decoration: none;
 }
-/* line 164, ../scss/modals/_login.scss */
+/* line 299, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .login_social_list ul li a img {
   width: 40px;
   height: 40px;
 }
-/* line 174, ../scss/modals/_login.scss */
+/* line 309, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .social_problems {
   width: 100%;
 }
-/* line 178, ../scss/modals/_login.scss */
+/* line 313, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .social_problems a {
   font-size: 100%;
   color: #47c9ec;
   font-width: 5px;
 }
-/* line 183, ../scss/modals/_login.scss */
+/* line 318, ../scss/modals/_login.scss */
 .login-content .login-main-content .form-right .social_problems a:hover {
   text-decoration: none;
   color: #4682b4;
+}
+
+/* line 332, ../scss/modals/_login.scss */
+#login-modal > div > div > div.login-main-content > div.content-signup > div.form-left.clearfix > span > span {
+  font-size: 10px;
+}
+
+/* line 335, ../scss/modals/_login.scss */
+#login-modal > div > div > div.login-main-content > div.content-signup > div.form-left.clearfix > span > a {
+  font-size: 12px;
+}
+
+/* line 1, ../scss/modals/_subscription.scss */
+.subscriptionmodal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
+/* line 13, ../scss/modals/_subscription.scss */
+.settings {
+  margin-bottom: 15px;
+  padding: 0 15%;
+}
+
+/* line 17, ../scss/modals/_subscription.scss */
+.settings a {
+  color: #a8aaab;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 20px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  border-bottom: none;
+}
+
+/* line 30, ../scss/modals/_subscription.scss */
+.help {
+  margin-bottom: 15px;
+  padding: 0 15%;
+}
+
+/* line 35, ../scss/modals/_subscription.scss */
+.help a {
+  color: #a8aaab;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 24px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  border-bottom: none;
+}
+
+/* line 49, ../scss/modals/_subscription.scss */
+.help a:hover, .settings a:hover {
+  opacity: 1.2;
+  text-decoration: none;
+}
+
+/* line 55, ../scss/modals/_subscription.scss */
+.subscription_info {
+  list-style: none;
+  margin: 30px 0;
+}
+
+/* line 60, ../scss/modals/_subscription.scss */
+.cart_text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 70, ../scss/modals/_subscription.scss */
+.subscription_cart {
+  background-color: #082b49;
+  overflow: hidden;
+  padding: 15px 15px 15px 0;
+  text-align: center;
+}
+
+/* line 76, ../scss/modals/_subscription.scss */
+.subscription_avatar img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  width: 70px;
+  height: 65px;
+}
+
+/* line 84, ../scss/modals/_subscription.scss */
+.subscription_avatar {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  float: left;
+}
+
+/* line 89, ../scss/modals/_subscription.scss */
+.subscription_text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+/* line 97, ../scss/modals/_subscription.scss */
+.subscription_name {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 300;
+  display: block;
+}
+
+/* line 105, ../scss/modals/_subscription.scss */
+.subscription_account {
+  color: #242424;
+  overflow: hidden;
+  margin-bottom: 35px;
+  padding: 0 40px;
+}
+
+/* line 113, ../scss/modals/_subscription.scss */
+.subscription-main-content {
+  width: 100%;
+  height: auto;
+  position: inherit;
+}
+
+/* line 119, ../scss/modals/_subscription.scss */
+.subscription_logout {
+  padding: 0 40px;
+}
+
+/* line 126, ../scss/modals/_subscription.scss */
+.subscription-content {
+  width: 35%;
+  height: 58%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  left: 33%;
+  top: 21%;
+  overflow: hidden;
+}
+/* line 135, ../scss/modals/_subscription.scss */
+.subscription-content .unselect {
+  background: #eee;
+  opacity: 0.9;
+  color: #bac0c3;
+}
+/* line 143, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-header {
+  width: 100%;
+  height: inherit;
+}
+/* line 147, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-header .subscription-header-left {
+  width: 50%;
+  height: auto;
+  float: left;
+  text-align: center;
+  height: 85px;
+}
+/* line 153, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-header .subscription-header-left h4 {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  line-height: 85px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 164, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-header .subscription-header-right {
+  width: 50%;
+  height: auto;
+  float: right;
+  text-align: center;
+  height: 85px;
+}
+/* line 170, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-header .subscription-header-right h4 {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  line-height: 85px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 184, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content {
+  width: 100%;
+  height: auto;
+  position: inherit;
+}
+/* line 189, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .content-signin {
+  width: 100%;
+  height: 293px;
+  padding: 50px 40px;
+}
+/* line 194, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .content-signup {
+  width: 100%;
+  height: 293px;
+  padding: 50px 40px;
+}
+/* line 201, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-left {
+  float: left;
+  padding-right: 40px;
+  width: 50%;
+  border-right: 1px solid #e0e0e0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 212, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-left input[type="text"], .subscription-content .subscription-main-content .form-left input[type="password"] {
+  border-style: none;
+  -webkit-appearance: none;
+  outline: none;
+  resize: none;
+}
+/* line 220, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-left input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+/* line 229, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-left .terms {
+  color: #47c9ec;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+/* line 236, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-left .span-style {
+  position: relative;
+  line-height: 1.5em;
+  color: #5b6a76;
+}
+/* line 246, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right {
+  float: right;
+  padding-left: 40px;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 255, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .login_social_title {
+  color: #999fa2;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 23px;
+}
+/* line 262, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .login_social_list {
+  padding: 0;
+  width: 100%;
+}
+/* line 267, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .login_social_list ul {
+  width: 100%;
+}
+/* line 269, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .login_social_list ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+}
+/* line 274, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .login_social_list ul li a {
+  text-decoration: none;
+}
+/* line 277, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .login_social_list ul li a img {
+  width: 40px;
+  height: 40px;
+}
+/* line 287, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .social_problems {
+  width: 100%;
+}
+/* line 291, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .social_problems a {
+  font-size: 100%;
+  color: #47c9ec;
+  font-width: 5px;
+}
+/* line 296, ../scss/modals/_subscription.scss */
+.subscription-content .subscription-main-content .form-right .social_problems a:hover {
+  text-decoration: none;
+  color: #4682b4;
+}
+
+/* line 310, ../scss/modals/_subscription.scss */
+#login-modal > div > div > div.login-main-content > div.content-signup > div.form-left.clearfix > span > span {
+  font-size: 10px;
+}
+
+/* line 313, ../scss/modals/_subscription.scss */
+#login-modal > div > div > div.login-main-content > div.content-signup > div.form-left.clearfix > span > a {
+  font-size: 12px;
+}
+
+/* line 317, ../scss/modals/_subscription.scss */
+.subscription-header-blue {
+  font-size: 15px;
+  line-height: 18px;
+  background-color: #4c9bee;
+}
+
+/* line 323, ../scss/modals/_subscription.scss */
+.subscription-header-blue {
+  margin: 0 !important;
+  padding: 20px 30px;
+  font-weight: normal;
+  color: #ffffff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 331, ../scss/modals/_subscription.scss */
+.subscription-container {
+  margin: 10px 15px;
+}
+
+/* line 335, ../scss/modals/_subscription.scss */
+.subscription-container p {
+  font-size: 13px;
+  font-weight: normal;
 }
