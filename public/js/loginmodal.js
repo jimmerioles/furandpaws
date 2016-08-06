@@ -20,15 +20,15 @@ $(document).ready(function(){
 										'<input type="password" placeholder="Password"/>'+
 									'</div>'+
 
-									
+
 									'<input type="checkbox">'+
 									'<span><a href="#" class="a-style">Forgot password ?</a></span>'+
 									'<br>'+
 									'<div class="clearfix"></div>'+
-									
+
 
 									'<button type="submit" class="button_login hvr-wobble-vertical">LOGIN</button>'+
-								
+
 				 '</div>'+
 
 
@@ -44,7 +44,7 @@ $(document).ready(function(){
 										'<li><a href="#" class="hvr-pulse-shrink"><img src="img/icon/social/twitter.ico"></a></li>'+
 										'<li><a href="#" class="hvr-pulse-shrink"><img src="img/icon/social/google_plus.ico"></a></li>'+
 										'<li><a href="#" class="hvr-pulse-shrink"><img src="img/icon/social/instagram.ico"></a></li>'+
-										
+
 									'</ul>'+
 								'</div>'+
 
@@ -52,23 +52,23 @@ $(document).ready(function(){
 									'<a href="#">Problem with login?</a>'+
 
 									'<button type="cancel" class="exit button_exit hvr-wobble-vertical">CANCEL</button>'+
-								
+
 								'</div>'+
 
 				'</div>'
 
 			);
-		
+
 		$('button[type="cancel"]').click(function(){
 		$('#login-modal').slideUp("medium");
 
 	});
 
 
-	
+
 	});
 
-	
+
 
 
 	$('#login-left').click(function(){
@@ -78,7 +78,7 @@ $(document).ready(function(){
 
 		$('.content-signup').empty();
 		$('.content-signup').hide();
-		
+
 		$('.content-signin').empty();
 		$('.content-signin').fadeIn("slow");
 		$('.content-signin').append(
@@ -91,15 +91,15 @@ $(document).ready(function(){
 										'<input type="password" placeholder="Password" class="form-style"/>'+
 									'</div>'+
 
-									
+
 									'<input type="checkbox">'+
 									'<span><a href="#" class="a-style">Forgot password ?</a></span>'+
 									'<br>'+
 									'<div class="clearfix"></div>'+
-									
+
 
 									'<button type="submit" class="button_login hvr-wobble-vertical">LOGIN</button>'+
-								
+
 				 '</div>'+
 
 
@@ -115,7 +115,7 @@ $(document).ready(function(){
 										'<li><a href="#" class="hvr-pulse-shrink"><img src="img/icon/social/twitter.ico"></a></li>'+
 										'<li><a href="#" class="hvr-pulse-shrink"><img src="img/icon/social/google_plus.ico"></a></li>'+
 										'<li><a href="#" class="hvr-pulse-shrink"><img src="img/icon/social/instagram.ico"></a></li>'+
-										
+
 									'</ul>'+
 								'</div>'+
 
@@ -123,7 +123,7 @@ $(document).ready(function(){
 									'<a href="#">Problem with login?</a>'+
 
 									'<button type="cancel" class="button_exit hvr-wobble-vertical" id="exit">CANCEL</button>'+
-									
+
 								'</div>'+
 
 
@@ -163,10 +163,10 @@ $(document).ready(function(){
 							'<span><span class="span-style"> I agree with </span><a href="#" class="terms"> Terms and Conditions.</a></span>'+
 
 							'<div class="clearfix"></div>'+
-									
+
 
 							'<button type="submit" class="button_login hvr-wobble-vertical">SIGN UP</button>'+
-								
+
 
 				 		'</div>'+
 

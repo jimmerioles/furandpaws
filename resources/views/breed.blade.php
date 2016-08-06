@@ -74,13 +74,13 @@
                         <div class="alert alert-warning" role="alert" hidden>Sorry,no members were found.</div>
                         <li class="odd">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/lyndon.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">John Louise Berdida</a>
+                                    <a href="{{ url('profile') }}">John Louise Berdida</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -89,13 +89,13 @@
                         </li>
                         <li class="even">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/karen.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">Jimzter Merioles</a>
+                                    <a href="{{ url('profile') }}">Jimzter Merioles</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -104,13 +104,13 @@
                         </li>
                         <li class="odd">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/zetta.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">Maria Clara Pamat</a>
+                                    <a href="{{ url('profile') }}">Maria Clara Pamat</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -119,13 +119,13 @@
                         </li>
                         <li class="even">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/lyndon.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">John Louise Berdida</a>
+                                    <a href="{{ url('profile') }}">John Louise Berdida</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -134,13 +134,13 @@
                         </li>
                         <li class="odd">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/default-image.png" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">Karen Faith Alejandria</a>
+                                    <a href="{{ url('profile') }}">Karen Faith Alejandria</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -149,13 +149,13 @@
                         </li>
                         <li class="even">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/karen.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">Lyndon Abarquez</a>
+                                    <a href="{{ url('profile') }}l">Lyndon Abarquez</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -164,13 +164,13 @@
                         </li>
                         <li class="odd">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/default-image.png" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">John Louise Berdida</a>
+                                    <a href="{{ url('profile') }}">John Louise Berdida</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -179,13 +179,13 @@
                         </li>
                         <li class="even">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/karen.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">Jimzter Merioles</a>
+                                    <a href="{{ url('profile') }}">Jimzter Merioles</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -194,13 +194,13 @@
                         </li>
                         <li class="odd">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/zetta.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">Maria Clara Pamat</a>
+                                    <a href="{{ url('profile') }}">Maria Clara Pamat</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -209,13 +209,13 @@
                         </li>
                         <li class="even">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/default-image.png" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">John Louise Berdida</a>
+                                    <a href="{{ url('profile') }}">John Louise Berdida</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -224,13 +224,13 @@
                         </li>
                         <li class="odd">
                             <div class="item-avatar">
-                                <a href="profile.html">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/zetta.jpg" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">Karen Faith Alejandria</a>
+                                    <a href="{{ url('profile') }}">Karen Faith Alejandria</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>
@@ -239,13 +239,13 @@
                         </li>
                         <li class="even">
                             <div class="item-avatar">
-                                <a href=profile.html#">
+                                <a href="{{ url('profile') }}">
                                     <img src="img/thumbnail/default-image.png" alt="...">
                                 </a>
                             </div>
                             <div class="custom-item">
                                 <div class="item-title">
-                                    <a href="profile.html">Lyndon Abarquez</a>
+                                    <a href="{{ url('profile') }}">Lyndon Abarquez</a>
                                 </div>
                                 <div class="item-meta">
                                     <span class="fa fa-clock-o"> Posted 21 hours ago</span>

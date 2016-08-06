@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Item')
+@section('title', 'Clinics-profile')
 
 @push('head-css')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/thumbnail.css') }}">
@@ -11,7 +11,7 @@
     <div class="header-container">
         <div class="header-content">
             <div class="header-left">
-                <h1>My Item</h1>
+                <h1>Clinics Profile</h1>
             </div>
             <div class="header-right">
                 <ol class="breadcrumb">

@@ -28,7 +28,7 @@
 
 
                     <div class="caption">
-                        <a href=""><h3>Cebu Veterinary Doctors</h3></a>
+                        <a href="{{ url('clinics-profile') }}"><h3>Cebu Veterinary Doctors</h3></a>
                         <br>
                         <p>Veterinarians And Pet Store</p>
                         <p></p>
@@ -47,7 +47,7 @@
 
 
                     <div class="caption">
-                        <a href="clinicsprofile.html"><h3>Cebu Veterinary Doctors</h3></a>
+                        <a href="{{ url('clinics-profile') }}"><h3>Cebu Veterinary Doctors</h3></a>
                         <br>
                         <p>Veterinarians And Pet Store</p>
                         <p></p>
@@ -67,7 +67,7 @@
 
 
                     <div class="caption">
-                        <a href="petprofile.html"><h3>Cebu Veterinary Doctors</h3></a>
+                        <a href="{{ url('clinics-profile') }}l"><h3>Cebu Veterinary Doctors</h3></a>
                         <br>
                         <p>Veterinarians And Pet Store</p>
                         <p></p>
@@ -91,7 +91,7 @@
 
 
                     <div class="caption">
-                        <a href="petprofile.html"><h3>Cebu Veterinary Doctors</h3></a>
+                        <a href="{{ url('clinics-profile') }}"><h3>Cebu Veterinary Doctors</h3></a>
                         <br>
                         <p>Veterinarians And Pet Store</p>
                         <p></p>
@@ -111,7 +111,7 @@
 
 
                     <div class="caption">
-                        <a href="petprofile.html"><h3>Cebu Veterinary Doctors</h3></a>
+                        <a href="{{ url('clinics-profile') }}"><h3>Cebu Veterinary Doctors</h3></a>
                         <br>
                         <p>Veterinarians And Pet Store</p>
                         <p></p>
@@ -131,7 +131,7 @@
 
 
                     <div class="caption">
-                        <a href="petprofile.html"><h3>Cebu Veterinary Doctors</h3></a>
+                        <a href="{{ url('clinics-profile') }}"><h3>Cebu Veterinary Doctors</h3></a>
                         <br>
                         <p>Veterinarians And Pet Store</p>
                         <p></p>

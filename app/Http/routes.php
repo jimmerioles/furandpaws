@@ -15,6 +15,7 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::auth();
 
+    //Guest Views
     Route::get('/', 'SiteController@home');
 
     Route::get('/pet-store', 'SiteController@petStore');
@@ -31,6 +32,24 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/pet-clinics', 'SiteController@petClinics');
 
+    Route::get('/clinics-profile','SiteController@clinicsProfile');
+
+    Route::get('/members-profile', 'SiteController@membersProfile');
+
+    //Pet Enthusiast Profile Views
+    Route::get('/profile/','SiteController@profileIndex');
+
+    Route::get('/profile/profile-settings','SiteController@profileSettings');
+
+    Route::get('/profile/profile-edit', 'SiteController@profileEdit');
+
+    Route::get('/profile/profile-delete', 'SiteController@profileDelete');
+
+    Route::get('/profile/profile-viewpets', 'SiteController@profileViewpets');
+
+    Route::get('/profile/profile-changephoto', 'SiteController@profileChangephoto');
+
+    Route::get('/profile/profile-changecover', 'SiteController@profileChangecover');
 });
 
 Route::group(['prefix' => 'api/v1', 'middleware' => ['api', 'auth:api']], function () {
