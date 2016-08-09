@@ -39,16 +39,16 @@
                           <div class="item-list-tabs no-ajax" id="objectnav" role="navigation">
                               <ul>
                                   <li id="activity-personal-li" class="current">
-                                      <a href="#" id="user-activity">Activity</a>
+                                      <a href="{{ url('/profile/profile-activity') }}" id="user-activity">Activity</a>
                                   </li>
                                   <li id="xprofile-personal-li" class="current select">
-                                      <a id="user-xprofile" href="#">Profile</a>
+                                      <a id="user-xprofile" href="{{ url('/profile/profile-edit') }}">Profile</a>
                                   </li>
                                   <li id="friends-personal-li" class="current">
                                       <a id="user-friends" href="#">Friends <span class="count">1</span></a>
                                   </li>
                                   <li id="groups-personal-li" class="current">
-                                      <a id="user-groups" href="#">Settings</a>
+                                      <a id="user-groups" href="{{ url('/profile/profile-settings') }}">Settings</a>
                                   </li>
                               </ul>
                           </div>
@@ -56,8 +56,8 @@
 
                       <div id="item-body">
 
-                        <div ><a href="{{ url('/profile/profile-edit') }}" class="current-selected">Edit</a></div>
-                        <div><a href="{{ url('/profile/profile-viewpets') }}">View Pets</a></div>
+                        <div ><a href="{{ url('/profile/profile-edit') }}">Edit</a></div>
+                        <div><a href="{{ url('/profile/profile-viewpets') }}" class="current-selected">View Pets</a></div>
                         <div><a href="{{ url('/profile/profile-changephoto') }}">Change Profile Photo</a></div>
                         <div><a href="{{ url('/profile/profile-changecover') }}">Change Cover Image</a></div>
                           <h3>List of Pets</h3>
@@ -67,9 +67,9 @@
 
                       <div class="clearfix"></div>
                       <br><br>
-                      <a href="profile-addpets.html" class="btn-comment">Add Pets</a>
+                      <a href="{{ url('/profile/profile-addpets') }}" class="btn-comment">Add Pets</a>
                       <span style="margin-left:10px;">
-                      <a href="profile-addpets.html" class="btn-comment">Sell Pets or Accessories</a>
+                      <a href="{{ url('/profile/profile-sellpets') }}" class="btn-comment">Sell Pets or Accessories</a>
                       </span>
                       <br>
                       <div class="clearfix"></div>
@@ -96,14 +96,14 @@
                           <div class="alert alert-warning" role="alert" hidden>Sorry,no Pets were found.</div>
                           <li class="odd">
                               <div class="item-thumbnail pull-left">
-                                  <a href="petprofile.html">
+                                  <a href="{{ url('/profile/profile-petprofile') }}">
                                       <img src="../img/thumbnail/lyndon.jpg" alt="...">
                                   </a>
                               </div>
 
                               <div class="custom-item">
                                   <div class="item-title">
-                                      <a href="petprofile.html">Zetta</a>
+                                      <a href="{{ url('/profile/profile-petprofile') }}">Zetta</a>
                                   </div>
 
                                   <div class="item-meta">
@@ -116,7 +116,7 @@
 
 
                                   <div class="item-meta">
-                                      <a href="#" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
+                                      <a href="{{ url('/profile/profile-petprofile') }}" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
                                   </div>
 
                               </div>
@@ -126,7 +126,7 @@
                           <li class="even">
 
                               <div class="item-thumbnail pull-left">
-                                  <a href="petprofile.html">
+                                  <a href="{{ url('/profile/profile-petprofile') }}">
                                       <img src="../img/thumbnail/zetta.jpg" alt="...">
                                   </a>
                               </div>
@@ -145,7 +145,7 @@
                                   </div>
 
                                   <div class="item-meta">
-                                      <a href="#" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
+                                      <a href="{{ url('/profile/profile-petprofile') }}" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
                                   </div>
 
                               </div>
@@ -154,7 +154,7 @@
 
                           <li class="odd">
                               <div class="item-thumbnail pull-left">
-                                  <a href="petprofile.html">
+                                  <a href="{{ url('/profile/profile-petprofile') }}">
                                       <img src="../img/thumbnail/default-image.png" alt="...">
                                   </a>
                               </div>
@@ -173,7 +173,7 @@
                                   </div>
 
                                   <div class="item-meta">
-                                      <a href="#" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
+                                      <a href="{{ url('/profile/profile-petprofile') }}" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
                                   </div>
 
                               </div>
@@ -183,7 +183,7 @@
                           <li class="even">
 
                               <div class="item-thumbnail pull-left">
-                                  <a href="petprofile.html">
+                                  <a href="{{ url('/profile/profile-petprofile') }}">
                                       <img src="../img/thumbnail/karen.jpg" alt="...">
                                   </a>
                               </div>
@@ -202,7 +202,7 @@
                                   </div>
 
                                   <div class="item-meta">
-                                      <a href="#" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
+                                      <a href="{{ url('/profile/profile-petprofile') }}" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
                                   </div>
 
                               </div>
@@ -210,7 +210,7 @@
 
                           <li class="odd">
                               <div class="item-thumbnail pull-left">
-                                  <a href="petprofile.html">
+                                  <a href="{{ url('/profile/profile-petprofile') }}">
                                       <img src="../img/thumbnail/lyndon.jpg" alt="...">
                                   </a>
                               </div>
@@ -229,7 +229,7 @@
                                   </div>
 
                                   <div class="item-meta">
-                                      <a href="#" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
+                                      <a href="{{ url('/profile/profile-petprofile') }}" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
                                   </div>
 
                               </div>
@@ -239,7 +239,7 @@
                           <li class="even">
 
                               <div class="item-thumbnail pull-left">
-                                  <a href="petprofile.html">
+                                  <a href="{{ url('/profile/profile-petprofile') }}">
                                       <img src="../img/thumbnail/zetta.jpg" alt="...">
                                   </a>
                               </div>
@@ -258,7 +258,7 @@
                                   </div>
 
                                   <div class="item-meta">
-                                      <a href="#" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
+                                      <a href="{{ url('/profile/profile-petprofile') }}" style="margin-right:10px">View</a><span><a href="#">Edit</a></span>
                                   </div>
 
                               </div>

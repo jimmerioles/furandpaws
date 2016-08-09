@@ -50,6 +50,30 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/profile/profile-changephoto', 'SiteController@profileChangephoto');
 
     Route::get('/profile/profile-changecover', 'SiteController@profileChangecover');
+
+    Route::get('/profile/profile-sellpets', 'SiteController@profileSellpets');
+
+    Route::get('/profile/profile-addpets', 'SiteController@profileAddpets');
+
+    Route::get('/profile/profile-petprofile', 'SiteController@profilePetprofile');
+
+    Route::get('/profile/profile-activity', 'SiteController@profileActivity');
+
+    Route::get('/profile/profile-searchmembers', 'SiteController@profileSearchmembers');
+
+    //Clinics and Vets Views
+
+    Route::get('/vetshops/','SiteController@profilehome');
+
+    Route::get('/vetshops/profile-changephoto', 'SiteController@vetshopsChangephoto');
+
+    Route::get('/vetshops/profile-changecover', 'SiteController@vetshopsChangecover');
+
+    Route::get('/vetshops/profile-about', 'SiteController@vetshopsAbout');
+
+    Route::get('/vetshops/profile-viewpost', 'SiteController@vetshopsViewpost');
+
+    Route::get('/vetshops/profile-sellproducts', 'SiteController@vetshopsSellproducts');
 });
 
 Route::group(['prefix' => 'api/v1', 'middleware' => ['api', 'auth:api']], function () {

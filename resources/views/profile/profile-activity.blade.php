@@ -1,3 +1,10 @@
+@extends('layouts.profile')
+
+@section('title', 'Activities')
+
+
+@section('content')
+
 <div class="content-wrap clearfix">
 
     <div class="section-content clearfix">
@@ -32,7 +39,7 @@
                         <div id="item-nav">
                             <div class="item-list-tabs no-ajax" id="objectnav" role="navigation">
                                 <ul>
-                                    <li id="activity-personal-li" class="current">
+                                    <li id="activity-personal-li" class="current select">
                                         <a href="{{ url('/profile/profile-activity') }}" id="user-activity">Activity</a>
                                     </li>
                                     <li id="xprofile-personal-li" class="current">
@@ -41,50 +48,75 @@
                                     <li id="friends-personal-li" class="current">
                                         <a id="user-friends" href="#">Friends <span class="count">1</span></a>
                                     </li>
-                                    <li id="groups-personal-li" class="current select">
-                                        <a id="user-groups" href="{{ url('/profile/profile-settings') }}">Settings</a>
+                                    <li id="groups-personal-li" class="current">
+                                        <a id="user-groups" href="#">Groups <span class="count">4</span></a>
                                     </li>
                                 </ul>
                             </div>
                         </div><!--item-nav-->
 
                         <div id="item-body">
-                            <div><a href="{{ url('/profile/profile-settings') }}">General</a></div>
-                            <div ><a href="{{ url('/profile/profile-edit') }}">Profile Visibility</a></div>
-                            <div><a href="{{ url('profile/') }}" class="current-selected">Type of user</a></div>
-                            <div><a href="{{ url('/profile/profile-delete') }}">Delete Account</a></div>
-
-                            <br>
-
-                            <div class="alert alert-success" role="alert">
-                                User type verification : You can choose between Pet enthusiast or Petshops/Clinics.
-                            </div>
-
-                            <div class="editfield">
-                                <label>User's Info Type ?</label>
+                            <div><a href="#">Personal</a></div>
+                            <div><a href="#">Mentions</a></div>
+                            <div><a href="#">Favorites</a></div>
+                            <div><a href="#">Friends</a></div>
+                            <div style="width:400px"><span style="padding-right: 10px;">Show: </span>
                                 <select>
-                                    <option>Pet Enthusiast</option>
-                                    <option>Pet Shops</option>
-                                    <option>Vet Clinics</option>
+                                    <option>--Everything--</option>
+                                    <option>Posts</option>
+                                    <option>Friendships</option>
+                                    <option>Comments</option>
+                                    <option>Updates</option>
                                 </select>
-                                <div class="field-visibility-settings-notoggle">
-                                    Any changes for this is : <span class="current-visibility-level"> irreversible</span>
-                                </div>
-                                <p class="description"></p>
                             </div>
-                            <br>
-                            <button class="btn-comment pull-left" id="delete-account-button" disabled="">Update Changes</button>
+
                         </div>
-
-
-
                         <div class="clearfix"></div>
 
 
                     </div>
-                </section>
-                <hr>
 
+                </section>
+
+                <br><br>
+                    <p>What's new, jLkisni ?</p>
+                    <textarea name="" cols="25" rows="4" class="form-control" placeholder="Send your message here....."></textarea>
+                    <br>
+                    <button class="btn-comment pull-right">Post Update</button>
+                <br>
+                <hr>
+                <br>
+                <ol class="commentlist">
+                    <li class="profile-border">
+                        <div class="comment-16">
+                            <img src="../img/thumbnail/john.jpg" class="avatar">
+
+                            <div class="comment-text">
+
+
+                                <p class="meta">
+                                    <strong>John Louise Berdida</strong>
+                                    -
+                                    <time>Posted: 1 Hour ago:</time>
+                                </p>
+                                <div class="description">
+                                    Ang gugma murag programming ! ! Dugay ka makatulog :D HAHA
+
+                                    <br>
+                                    <p class="meta">
+
+                                        <a href="#"><strong> Reply </strong></a>
+
+                                        <a href="#"><strong> Delete </strong></a>
+                                    </p>
+                                </div>
+                                <br>
+
+                            </div>
+                        </div>
+
+                    </li> <!--end of first comment-->
+                </ol>
 
             </article>
 
@@ -129,3 +161,4 @@
 
     </div>
 </div> <!--content-wrap-->
+@endsection

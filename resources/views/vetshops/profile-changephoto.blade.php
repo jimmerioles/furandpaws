@@ -1,4 +1,4 @@
-@extends('layouts.profile')
+@extends('layouts.clinics')
 
 @section('title', 'Change Profile Photos')
 
@@ -15,14 +15,14 @@
                     <div id="buddypress">
                         <div id="item-header">
                             <div id="cover-image-container">
-                                <a href="#" id="header-cover-image"><img src="../img/thumbnail/timeline.jpg"></a>
+                                <a href="#" id="header-cover-image"><img src=""></a>
                                 <div id="item-header-cover-image">
                                     <div id="item-header-avatar">
-                                        <a href="#" ><img src="../img/thumbnail/john.jpg" class="avatar avatar-150 photo"/></a>
+                                        <a href="#" ><img src="../img/VetClinics/CVD.jpg" class="avatar avatar-150 photo"/></a>
                                     </div>
 
                                     <div id="item-header-content">
-                                        <h2 class="user-nicename">John Louise Berdida</h2>
+                                        <h2 class="user-nicename">Cebu Veterinary Doctors</h2>
                                         <div id="item-buttons"></div>
                                         <span class="activity">active 1 day, 20 hours ago</span>
                                         <div id="item-meta">
@@ -38,17 +38,17 @@
                         <div id="item-nav">
                             <div class="item-list-tabs no-ajax" id="objectnav" role="navigation">
                                 <ul>
-                                    <li id="activity-personal-li" class="current">
-                                        <a href="{{ url('/profile/profile-activity') }}" id="user-activity">Activity</a>
+                                    <li id="activity-personal-li" class="current select">
+                                        <a href="{{ url('vetshops/') }}" id="user-activity">Profile</a>
                                     </li>
-                                    <li id="xprofile-personal-li" class="current select">
-                                        <a id="user-xprofile" href="{{ url('/profile/profile-edit') }}">Profile</a>
+                                    <li id="xprofile-personal-li" class="current">
+                                        <a id="user-xprofile" href="{{ url('/vetshops/profile-about') }}">About</a>
                                     </li>
                                     <li id="friends-personal-li" class="current">
-                                        <a id="user-friends" href="#">Friends <span class="count">1</span></a>
+                                        <a id="user-friends" href="{{ url('/vetshops/profile-viewpost') }}">Post <span class="count">(1)</span></a>
                                     </li>
                                     <li id="groups-personal-li" class="current">
-                                        <a id="user-groups" href="{{ url('/profile/profile-settings') }}">Settings</a>
+                                        <a id="user-groups" href="#">Settings</a>
                                     </li>
                                 </ul>
                             </div>
@@ -56,10 +56,9 @@
 
                         <div id="item-body">
 
-                          <div ><a href="{{ url('/profile/profile-edit') }}">Edit</a></div>
-                          <div><a href="{{ url('/profile/profile-viewpets') }}">View Pets</a></div>
-                          <div><a href="{{ url('/profile/profile-changephoto') }}" class="current-selected">Change Profile Photo</a></div>
-                          <div><a href="{{ url('/profile/profile-changecover') }}">Change Cover Image</a></div>
+                            <div ><a href="{{ url('vetshops/') }}">Edit</a></div>
+                            <div><a href="{{ url('/vetshops/profile-changephoto') }}" class="current-selected">Change Profile Photo</a></div>
+                            <div><a href="{{ url('/vetshops/profile-changecover') }}">Change Cover Image</a></div>
                             <h3>Change Profile Photo</h3>
                             <p>Your profile photo will be used on your profile and throughout the site. </p>
 
@@ -72,18 +71,19 @@
                                     <p class="drag-drop-info"><div id="image-holder"> </div></p>
                                     <p></p>
                                     <p class="drag-drop-buttons">
-                                       <center><label class="myLabel">
-                                                <input type="file" id="getphotos" required/>
-                                                <span>Upload your files</span>
-                                            </label>
-                                      </center>
+                                    <center><label class="myLabel">
+                                        <input type="file" id="getphotos" required/>
+                                        <span>Upload Photos</span>
+                                    </label>
+                                    </center>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="clearfix"></div>
                         <br><br>
-                        <button class="btn-comment">Save profile picture</button><span style="margin-left:10px;"><button class="btn-comment">Delete Photos</button></span>
+                        <p>If you'd like to delete your current image but not upload a new one, please use the delete Image button.</p>
+                        <button class="btn-comment">Save Profile Photo</button><span style="margin-left:10px;"><button class="btn-comment">Delete My Profile Photo</button></span>
                         <br>
                         <div class="clearfix"></div>
 
@@ -91,7 +91,6 @@
                     </div>
                 </section>
                 <hr>
-
 
             </article>
 
@@ -103,7 +102,7 @@
         <div class="widget-right">
             <aside class="widget">
                 <h5 class="widget_title">
-                    Search Members
+                    Search Shops or Clinics
                 </h5>
 
                 <form class="standard-form">
@@ -112,17 +111,15 @@
                         <input type="text"/>
                     </div>
                     <div>
-                        <label>Age</label>
+                        <label>Location</label>
                         <input type="text"/>
                     </div>
                     <div>
-                        <label>Pet Breed</label>
+                        <label>Type</label>
                         <select>
-                            <option>--Select Breed--</option>
-                            <option>German Shepherd</option>
-                            <option>Askal</option>
-                            <option>Pussy</option>
-                            <option>lang mananap</option>
+                            <option>Vet Clinics</option>
+                            <option>Pet Shops</option>
+
                         </select>
                     </div>
                     <div class="submit">

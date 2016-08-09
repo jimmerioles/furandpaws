@@ -39,10 +39,10 @@
                           <div class="item-list-tabs no-ajax" id="objectnav" role="navigation">
                               <ul>
                                   <li id="activity-personal-li" class="current">
-                                      <a href="#" id="user-activity">Activity</a>
+                                      <a href="{{ url('/profile/profile-activity') }}" id="user-activity">Activity</a>
                                   </li>
                                   <li id="xprofile-personal-li" class="current select">
-                                      <a id="user-xprofile" href="#">Profile</a>
+                                      <a id="user-xprofile" href="{{ url('/profile/profile-edit') }}">Profile</a>
                                   </li>
                                   <li id="friends-personal-li" class="current">
                                       <a id="user-friends" href="#">Friends <span class="count">1</span></a>

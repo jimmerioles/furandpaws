@@ -55,6 +55,7 @@ class SiteController extends Controller
     public function memberProfile(){
         return view('member-profile');
     }
+    //Profile views
 
     public function profileIndex(){
       return view('profile.index');
@@ -80,4 +81,52 @@ class SiteController extends Controller
       return view('profile.profile-changephoto');
     }
 
+    public function profileChangecover(){
+      return view('profile.profile-changecover');
+    }
+
+    public function profileSellpets(){
+      return view('profile.profile-sellpets');
+    }
+
+    public function profileAddpets(){
+      return view('profile.profile-addpets');
+    }
+
+    public function profilePetprofile(){
+      return view('profile.profile-petprofile');
+    }
+
+    public function profileActivity(){
+      return view('profile.profile-activity');
+    }
+
+    public function profileSearchmembers(){
+      return view('profile.profile-searchmembers');
+    }
+
+    //clinics Views
+    public function profilehome(){
+      return view('vetshops.profile-edit');
+    }
+
+    public function vetshopsChangephoto(){
+      return view('vetshops.profile-changephoto');
+    }
+
+    public function vetshopsChangecover(){
+      return view('vetshops.profile-changecover');
+    }
+
+    public function vetshopsAbout(){
+      return view('vetshops.profile-about');
+    }
+
+    public function vetshopsViewpost(){
+      return view('vetshops.profile-viewpost');
+    }
+
+    public function vetshopsSellproducts(){
+      return view('vetshops.profile-sellproducts');
+    }
 }

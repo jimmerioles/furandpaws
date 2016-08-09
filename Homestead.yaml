@@ -13,7 +13,7 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: "/home/jimzter/Projects/School/furandpaws"
+    - map: "C:/wamp/www/furandpaws"
       to: "/home/vagrant/furandpaws"
 
 sites:

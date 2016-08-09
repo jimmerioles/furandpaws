@@ -1,3 +1,9 @@
+@extends('layouts.clinics')
+
+@section('title', 'Edit-Settings')
+
+
+@section('content')
 <div class="content-wrap clearfix">
 
     <div class="section-content clearfix">
@@ -9,14 +15,14 @@
                     <div id="buddypress">
                         <div id="item-header">
                             <div id="cover-image-container">
-                                <a href="#" id="header-cover-image"><img src="../img/thumbnail/timeline.jpg"></a>
+                                <a href="#" id="header-cover-image"><img src=""></a>
                                 <div id="item-header-cover-image">
                                     <div id="item-header-avatar">
-                                        <a href="#" ><img src="../img/thumbnail/john.jpg" class="avatar avatar-150 photo"/></a>
+                                        <a href="#" ><img src="../img/VetClinics/CVD.jpg" class="avatar avatar-150 photo"/></a>
                                     </div>
 
                                     <div id="item-header-content">
-                                        <h2 class="user-nicename">John Louise Berdida</h2>
+                                        <h2 class="user-nicename">Cebu Veterinary Doctors</h2>
                                         <div id="item-buttons"></div>
                                         <span class="activity">active 1 day, 20 hours ago</span>
                                         <div id="item-meta">
@@ -32,48 +38,64 @@
                         <div id="item-nav">
                             <div class="item-list-tabs no-ajax" id="objectnav" role="navigation">
                                 <ul>
-                                    <li id="activity-personal-li" class="current">
-                                        <a href="{{ url('/profile/profile-activity') }}" id="user-activity">Activity</a>
+                                    <li id="activity-personal-li" class="current select">
+                                        <a href="{{ url('vetshops/') }}" id="user-activity">Profile</a>
                                     </li>
+
                                     <li id="xprofile-personal-li" class="current">
-                                        <a id="user-xprofile" href="{{ url('/profile/profile-edit') }}">Profile</a>
+                                        <a id="user-xprofile" href="{{ url('/vetshops/profile-about') }}">About</a>
                                     </li>
+
                                     <li id="friends-personal-li" class="current">
-                                        <a id="user-friends" href="#">Friends <span class="count">1</span></a>
+                                        <a id="user-friends" href="{{ url('/vetshops/profile-viewpost') }}">Post <span class="count">(1)</span></a>
                                     </li>
-                                    <li id="groups-personal-li" class="current select">
-                                        <a id="user-groups" href="{{ url('/profile/profile-settings') }}">Settings</a>
+
+                                    <li id="groups-personal-li" class="current">
+                                        <a id="user-groups" href="#">Settings</a>
                                     </li>
                                 </ul>
                             </div>
                         </div><!--item-nav-->
 
                         <div id="item-body">
-                            <div><a href="{{ url('/profile/profile-settings') }}">General</a></div>
-                            <div ><a href="{{ url('/profile/profile-edit') }}">Profile Visibility</a></div>
-                            <div><a href="{{ url('profile/') }}" class="current-selected">Type of user</a></div>
-                            <div><a href="{{ url('/profile/profile-delete') }}">Delete Account</a></div>
 
-                            <br>
+                            <div ><a href="{{ url('/vetshops/') }}" class="current-selected">Edit</a></div>
+                            <div><a href="{{ url('/vetshops/profile-changephoto') }}">Change Profile Photo</a></div>
+                            <div><a href="{{ url('/vetshops/profile-changecover') }}">Change Cover Image</a></div>
+                            <h4>Editing 'Base' Profile Group</h4>
 
-                            <div class="alert alert-success" role="alert">
-                                User type verification : You can choose between Pet enthusiast or Petshops/Clinics.
+                            <div class="editfield">
+                                <label for="username">Name(Required)</label>
+                                <input id="username" name="field_1" type="text" value="Cebu Veterinary Doctors" aria-required="true">
+                                <div class="field-visibility-settings-notoggle">
+                                    This field can be seen by : <span class="current-visibility-level"> Everyone</span>
+                                </div>
+                                <p class="description"></p>
                             </div>
 
                             <div class="editfield">
-                                <label>User's Info Type ?</label>
+                                <label for="username">Email Address</label>
+                                <input id="email" name="field_1" type="text" value="cvd_clinics@yahoo.com" aria-required="true">
+                                <div class="field-visibility-settings-notoggle">
+                                    This field can be seen by : <span class="current-visibility-level"> Everyone</span>
+                                </div>
+                                <p class="description"></p>
+                            </div>
+
+                            <div class="editfield">
+                                <label>Type</label>
                                 <select>
-                                    <option>Pet Enthusiast</option>
                                     <option>Pet Shops</option>
-                                    <option>Vet Clinics</option>
+                                    <option>Veterinary Clinics</option>
+
                                 </select>
                                 <div class="field-visibility-settings-notoggle">
-                                    Any changes for this is : <span class="current-visibility-level"> irreversible</span>
+                                    This field can be seen by : <span class="current-visibility-level"> Everyone</span>
                                 </div>
                                 <p class="description"></p>
                             </div>
                             <br>
-                            <button class="btn-comment pull-left" id="delete-account-button" disabled="">Update Changes</button>
+                            <button class="btn-comment pull-left">Save Changes</button>
                         </div>
 
 
@@ -96,7 +118,7 @@
         <div class="widget-right">
             <aside class="widget">
                 <h5 class="widget_title">
-                    Search Members
+                    Search Shops or Clinics
                 </h5>
 
                 <form class="standard-form">
@@ -105,17 +127,15 @@
                         <input type="text"/>
                     </div>
                     <div>
-                        <label>Age</label>
+                        <label>Location</label>
                         <input type="text"/>
                     </div>
                     <div>
-                        <label>Pet Breed</label>
+                        <label>Type</label>
                         <select>
-                            <option>--Select Breed--</option>
-                            <option>German Shepherd</option>
-                            <option>Askal</option>
-                            <option>Pussy</option>
-                            <option>lang mananap</option>
+                            <option>Vet Clinics</option>
+                            <option>Pet Shops</option>
+
                         </select>
                     </div>
                     <div class="submit">
@@ -129,3 +149,5 @@
 
     </div>
 </div> <!--content-wrap-->
+
+@endsection
