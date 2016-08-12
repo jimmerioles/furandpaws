@@ -129,4 +129,38 @@ class SiteController extends Controller
     public function vetshopsSellproducts(){
       return view('vetshops.profile-sellproducts');
     }
+
+    //Admin page view
+
+    public function adminLogin(){
+      return view('layouts.admin-login');
+    }
+
+    public function adminIndex(){
+      return view('admin.index');
+    }
+
+    public function manageProfile(){
+      return view('admin.manageProfile');
+    }
+
+    public function enthusiast(){
+      return view('admin.enthusiast');
+    }
+
+    public function petshops(){
+      return view('admin.petshops');
+    }
+
+    public function vetclinics(){
+      return view('admin.vetclinics');
+    }
+
+    public function petshopSubscription(){
+      return view('admin.petshop-subscription');
+    }
+
+    public function vetclinicSubscription(){
+      return view('admin.vetclinic-subscription');
+    }
 }

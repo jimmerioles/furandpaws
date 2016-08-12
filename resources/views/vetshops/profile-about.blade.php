@@ -45,7 +45,7 @@
                             <div class="item-list-tabs no-ajax" id="objectnav" role="navigation">
                                 <ul>
                                     <li id="activity-personal-li">
-                                        <a href="{{ url('/vetshops/') }}" id="user-activity">Profile</a>
+                                        <a href="{{ url('vetshops/') }}" id="user-activity">Profile</a>
                                     </li>
                                     <li id="xprofile-personal-li" class="current select">
                                         <a id="user-xprofile" href="{{ url('/vetshops/profile-about') }}">About</a>

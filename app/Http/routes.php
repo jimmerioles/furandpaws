@@ -74,6 +74,18 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/vetshops/profile-viewpost', 'SiteController@vetshopsViewpost');
 
     Route::get('/vetshops/profile-sellproducts', 'SiteController@vetshopsSellproducts');
+
+    //Admin Page Views
+
+    Route::get('/admin/login', 'SiteController@adminLogin');
+    Route::get('/admin/', 'SiteController@adminIndex');
+    Route::get('admin/manageProfile', 'SiteController@manageProfile');
+    Route::get('admin/enthusiast', 'SiteController@enthusiast');
+    Route::get('admin/petshops', 'SiteController@petshops');
+    Route::get('admin/vetclinics', 'SiteController@vetclinics');
+    Route::get('admin/petshop-subscription' , 'SiteController@petshopSubscription');
+    Route::get('admin/vetclinic-subscription', 'SiteController@vetclinicSubscription');
+
 });
 
 Route::group(['prefix' => 'api/v1', 'middleware' => ['api', 'auth:api']], function () {
